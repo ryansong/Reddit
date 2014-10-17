@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="WKs-WH-zK8">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Initial View Controller-->
@@ -15,8 +16,144 @@
                     <view key="view" contentMode="scaleToFill" id="w6M-ai-roH">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNy-s0-IA4">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.80784313725490198" green="0.8901960784313725" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="33B-ZK-AQ6"/>
+                                    <constraint firstAttribute="height" constant="60" id="cxk-0h-rWf"/>
+                                </constraints>
+                                <state key="normal" title="Login">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="33B-ZK-AQ6"/>
+                                        <exclude reference="cxk-0h-rWf"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="33B-ZK-AQ6"/>
+                                        <include reference="cxk-0h-rWf"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="loginButtonTapped:" destination="WKs-WH-zK8" eventType="touchUpInside" id="WZT-Re-tE7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flM-Wf-epa">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.80784313725490198" green="0.8901960784313725" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="oWY-Qa-t3j"/>
+                                    <constraint firstAttribute="width" constant="60" id="tNC-Dh-Gtd"/>
+                                </constraints>
+                                <state key="normal" title="See">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="oWY-Qa-t3j"/>
+                                        <exclude reference="tNC-Dh-Gtd"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="oWY-Qa-t3j"/>
+                                        <include reference="tNC-Dh-Gtd"/>
+                                    </mask>
+                                </variation>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XHk-EN-qTc">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.80784313725490198" green="0.8901960784313725" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="3qG-HU-kSY"/>
+                                    <constraint firstAttribute="width" constant="60" id="kAx-Zw-Lf9"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="alpha">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3qG-HU-kSY"/>
+                                        <exclude reference="kAx-Zw-Lf9"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="3qG-HU-kSY"/>
+                                        <include reference="kAx-Zw-Lf9"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="UNy-s0-IA4" firstAttribute="leading" secondItem="w6M-ai-roH" secondAttribute="leadingMargin" constant="60" id="1qR-zh-X6Y"/>
+                            <constraint firstAttribute="centerY" secondItem="XHk-EN-qTc" secondAttribute="centerY" id="Oxv-M3-HX6"/>
+                            <constraint firstItem="flM-Wf-epa" firstAttribute="centerY" secondItem="UNy-s0-IA4" secondAttribute="centerY" id="Pxt-rn-LPQ"/>
+                            <constraint firstItem="XHk-EN-qTc" firstAttribute="leading" secondItem="w6M-ai-roH" secondAttribute="leadingMargin" constant="60" id="n6W-lQ-lBg"/>
+                            <constraint firstAttribute="centerY" secondItem="UNy-s0-IA4" secondAttribute="centerY" id="pWW-rc-PTn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="flM-Wf-epa" secondAttribute="trailing" constant="60" id="xuc-68-xBJ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="UNy-s0-IA4"/>
+                                <exclude reference="flM-Wf-epa"/>
+                                <exclude reference="XHk-EN-qTc"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="1qR-zh-X6Y"/>
+                                <exclude reference="pWW-rc-PTn"/>
+                                <exclude reference="Oxv-M3-HX6"/>
+                                <exclude reference="n6W-lQ-lBg"/>
+                                <exclude reference="Pxt-rn-LPQ"/>
+                                <exclude reference="xuc-68-xBJ"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="UNy-s0-IA4"/>
+                                <include reference="flM-Wf-epa"/>
+                                <include reference="XHk-EN-qTc"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="1qR-zh-X6Y"/>
+                                <include reference="pWW-rc-PTn"/>
+                                <include reference="Oxv-M3-HX6"/>
+                                <include reference="n6W-lQ-lBg"/>
+                                <include reference="Pxt-rn-LPQ"/>
+                                <include reference="xuc-68-xBJ"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="loginButton" destination="UNy-s0-IA4" id="Pbl-Cv-uSG"/>
+                        <outlet property="seeButton" destination="flM-Wf-epa" id="osA-CF-ZYB"/>
+                        <outlet property="textFieldsContainerView" destination="XHk-EN-qTc" id="PdD-eO-E3K"/>
+                        <outlet property="textFieldsWithConstraint" destination="kAx-Zw-Lf9" id="KF0-g0-tp7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CxC-ye-nPQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
